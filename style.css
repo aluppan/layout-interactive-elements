@@ -10,16 +10,22 @@ body {
 
 .container {
     display: flex;
-    width: 1678px;
+    width: 1920px;
     height: 640px;
     background: #424242;
     padding-top: 70px;
     padding-left: 70px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin: 0;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+.container-margin {
+    margin-right: 58px;
 }
 
 /* Чекбокс */
-
 .checkbox-container {
     display: flex;
     flex-direction: column;
@@ -28,7 +34,6 @@ body {
     padding: 21px 29px 29px 30px;
     background: #FFFFFF;
     border-radius: 10px;
-    margin-right: 58px;
 }
 
 .option {
@@ -88,10 +93,8 @@ body {
 } */
 
 /* Селект */
-
 .select-container {
     width: 176px;
-    margin-right: 58px;
 }
 
 .choices {
@@ -188,3 +191,42 @@ is-focused .choices__inner,
     padding-bottom: 10px;
 }
 
+/* Яндекс Карта */
+[class*="ground-pane"] {
+    filter: grayscale(1)
+}
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+/* Скролл */
+.customScroll {
+    width: 399px;
+    max-height: 310px;
+    padding: 20px 30px;
+    background: #fff;
+}
+
+.customScroll__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #333333;
+}
+
+.simplebar-scrollbar:before {
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background: #CCB26E;
+    border-radius: 5px;
+    width: 6px;
+    max-height: 70px;
+    opacity: 1;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+    opacity: 1;
+}
