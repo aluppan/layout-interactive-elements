@@ -10,14 +10,18 @@ body {
 
 .container {
     display: flex;
-    width: 1920px;
-    height: 640px;
+    width: 2410px;
+    /* height: 640px; */
+    height: 552px;
+    /* height: 97vh; */
     background: #424242;
-    padding-top: 70px;
-    padding-left: 70px;
+    /* padding-top: 70px;
+    padding-left: 70px; */
+    padding-top: 40px;
+    padding-left: 40px;
     /* margin: 0 auto; */
     margin: 0;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
@@ -79,7 +83,7 @@ body {
 
 .check__input:checked + .check__box {
     border: 1px solid #CCB26E;
-    background-image: url(../check.svg);
+    background-image: url(/img/check.svg);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -230,3 +234,92 @@ is-focused .choices__inner,
 .simplebar-scrollbar.simplebar-visible::before {
     opacity: 1;
 }
+
+/* Форма валидации */
+.form-container {
+    position: relative;
+    width: 440px;
+    height: 410px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 38px 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* opacity: 1; */
+}
+
+.form__group-box {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form__group {
+    background: #FFFFFF;
+    border: 1px solid #FF5C00;
+    border-radius: 10px;
+    max-width: 380px;
+    height: 60px;
+    margin-bottom: 31px;
+    padding: 24px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #999999;
+}
+
+.form__button {
+    max-width: 192px;
+    padding: 18.5px 53px;
+    background: #FF5C00;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.just-validate-error-label {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF5C00;
+    margin-top: -17px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+/* Тултип */
+.tooltip-container {
+    width: 375px;
+    height: 160px;
+    padding: 20px 84px 20px 29px;
+    background: #FFFFFF;
+}
+
+.tooltip__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #333333;
+}
+
+.tooltip__info:hover path {
+    fill: #CCB26E;
+}
+
+.tippy-box {
+    margin-bottom: 4px;
+    background-color: #666666;
+    color: #fff;
+    border-radius: 0;
+}
+
+.tippy-box[data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #666666;
+  }
